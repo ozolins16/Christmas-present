@@ -250,3 +250,27 @@ const clear = document.getElementById("clear");
 
 clear.addEventListener("click", clearContent);
 drawBtn.addEventListener("click", drawTree);
+
+function animateHeading() {
+  var heading = document.getElementById("animatedHeading");
+  var text = heading.innerText;
+  var length = text.length;
+
+  // Clear the heading text
+  heading.innerText = "";
+
+  // Loop through each letter and create a span element with the animation class
+  for (var i = 0; i < length; i++) {
+    var letter = document.createElement("span");
+    letter.innerText = text[i];
+    letter.style.opacity = 0;
+    letter.classList.add("animate");
+    letter.style.animationDelay = i * 0.2 + "s"; // Adjust the delay based on your preference
+    heading.appendChild(letter);
+  }
+}
+
+// Call the function when the page loads
+document.addEventListener("DOMContentLoaded", function () {
+  animateHeading();
+});

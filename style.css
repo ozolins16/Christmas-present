@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 body {
   background-color: #151522;
   overflow: hidden;
@@ -30,6 +32,7 @@ svg {
   width: 300px;
   cursor: pointer;
   transition: 300ms all;
+  font-family: "Roboto Mono", monospace;
 }
 
 #drawTree:hover,
@@ -51,4 +54,13 @@ svg {
 #body {
   width: 100vw;
   height: 100vh;
+}
+
+#heading {
+  color: #cb9866;
+  position: absolute;
+  top: 80%;
+  left: 23%;
+  font-size: 60px;
+  font-family: "Roboto Mono", monospace;
 }
