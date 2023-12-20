@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #151522;
   overflow: hidden;
   display: flex;
@@ -19,6 +19,36 @@ svg {
   visibility: hidden;
 }
 
-.sperkle {
-  
+#drawTree,
+#clear {
+  position: absolute;
+  background-color: #cb9866;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 30px;
+  width: 300px;
+  cursor: pointer;
+  transition: 300ms all;
+}
+
+#drawTree:hover,
+#clear:hover {
+  background-color: #8a6745;
+  transition: 300ms all;
+}
+
+#drawTree {
+  top: 30%;
+  left: 70%;
+}
+
+#clear {
+  top: 50%;
+  left: 70%;
+}
+
+#body {
+  width: 100vw;
+  height: 100vh;
 }
